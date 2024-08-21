@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+:root {
+	box-sizing: border-box;
+}
 body {
 	line-height: 1;
 }
@@ -46,16 +49,33 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-  
 
-body {
-    background-color: #de8df7;
-    background-image: url('../img/336173.jpg');
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+.main {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-flow: row wrap;
 }
 
-form {
+.background {
+	background-image: url('../img/336173.jpg');
+	background-position: top;
+	background-size:cover;
+	background-repeat: no-repeat;
+	width: 50vw;
+}
+
+.form {
+	width: 50vw;
 	background-image: url('../img/Рисунок1.jpg');
+	display: flex;
+	flex-flow: column nowrap;
+	/* gap: 10px; */
 }
+
+.input {
+	display: flex;
+	flex-flow: column wrap;
+	width: 30%;
+}
+

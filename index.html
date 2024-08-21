@@ -5,50 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Form</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+
 </head>
 <body>
-    <form action="#" method="post">
-        <div id="title">Вступай в наши ряды!</div>
-        <div class="info">
-            <label for="nickname">Прозвище</label>
-            <div>
-                <input type="text" name="nickname" id="nickname" placeholder="Хупало-залуполо" required>
-            </div>
+    <div class="main">
+        <div class="background"></div>
+        <div class="form">
+            <form action="#" method="post">
+                <h2 id="title">Вступай в наши ряды!</h2>
+                <div class="input">
+                    <label for="nickname">Прозвище</label>
+                    <div>
+                        <input type="text" name="nickname" id="nickname" placeholder="Хупало-залуполо" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="email">Голубиная почта</label>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="goblin@gmail.com" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="password">Пароль</label>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="password">Подтвердить Пароль</label>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="fraction">Фракция</label>
+                    <select name="fraction">
+                        <option value="human">Хуман</option>
+                        <option value="demon">Демон</option>
+                        <option value="necr">Некр</option>
+                        <option value="liga">Лига</option>
+                        <option value="elf">Эльф</option>
+                        <option value="mage">Маг</option>
+                        <option value="gnome">Гном</option>
+                        <option value="ork">Орк</option>
+                      </select>
+                </div>
+                <div class="rules">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Да, я понимаю и подписываю священный договор в мире асхана</label>
+                </div>
+                <div class="submit">
+                    <button type="submit">На заливку!</button>
+                </div>
+                <div class="have-already">
+                    Уже был у нас? Заходи
+                </div>
+                
+            </form>
         </div>
-        <div class="info">
-            <label for="email">Голубиная почта</label>
-            <div>
-                <input type="email" name="email" id="email" placeholder="goblin@gmail.com" required>
-            </div>
-        </div>
-        <div class="info">
-            <label for="password">Пароль</label>
-            <div>
-                <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
-            </div>
-        </div>
-        <div class="info">
-            <label for="password">Подтвердить Пароль</label>
-            <div>
-                <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
-            </div>
-        </div>
-        <div class="info">
-            <label for="fraction">Фракция</label>
-            <select name="fraction">
-                <option value="human">Хуман</option>
-                <option value="demon">Демон</option>
-                <option value="necr">Некр</option>
-                <option value="liga">Лига</option>
-                <option value="elf">Эльф</option>
-                <option value="mage">Маг</option>
-                <option value="gnome">Гном</option>
-                <option value="ork">Орк</option>
-              </select>
-        </div>
-        <button>На заливку!</button>
-    </form>
+        
+    </div>
+    
     
 
 </body>

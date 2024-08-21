@@ -7,8 +7,48 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <form action="#" method="post">
+        <div id="title">Вступай в наши ряды!</div>
+        <div class="info">
+            <label for="nickname">Прозвище</label>
+            <div>
+                <input type="text" name="nickname" id="nickname" placeholder="Хупало-залуполо" required>
+            </div>
+        </div>
+        <div class="info">
+            <label for="email">Голубиная почта</label>
+            <div>
+                <input type="email" name="email" id="email" placeholder="goblin@gmail.com" required>
+            </div>
+        </div>
+        <div class="info">
+            <label for="password">Пароль</label>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
+            </div>
+        </div>
+        <div class="info">
+            <label for="password">Подтвердить Пароль</label>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
+            </div>
+        </div>
+        <div class="info">
+            <label for="fraction">Фракция</label>
+            <select name="fraction">
+                <option value="human">Хуман</option>
+                <option value="demon">Демон</option>
+                <option value="necr">Некр</option>
+                <option value="liga">Лига</option>
+                <option value="elf">Эльф</option>
+                <option value="mage">Маг</option>
+                <option value="gnome">Гном</option>
+                <option value="ork">Орк</option>
+              </select>
+        </div>
+        <button>На заливку!</button>
+    </form>
+    
 
-    
-    
 </body>
 </html>

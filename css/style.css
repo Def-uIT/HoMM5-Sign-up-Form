@@ -50,6 +50,22 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
+
+
+
+:root {
+	--input-border-width: 2px;
+	--input-border-color: e9e9e9;
+	--input-border-radius: 8px;
+	box-sizing: border-box;
+}
+
 .main {
 	display: flex;
 	width: 100vw;
@@ -62,20 +78,99 @@ table {
 	background-position: top;
 	background-size:cover;
 	background-repeat: no-repeat;
-	width: 50vw;
+	width: 70vw;
 }
 
 .form {
-	width: 50vw;
+	width: 30vw;
 	background-image: url('../img/Рисунок1.jpg');
 	display: flex;
 	flex-flow: column nowrap;
-	/* gap: 10px; */
+	justify-content: center;
+}
+
+form > div {
+	margin-top: 24px;
+}
+
+.input label {
+	margin-bottom: 4px;
+}
+
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+h2,
+.input,
+#fraction,
+.rules,
+#submit,
+.have-already {
+	min-width: none;
+	width: max(205px, 50%);
+}
+
+
+h2 {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
 }
 
 .input {
 	display: flex;
 	flex-flow: column wrap;
-	width: 30%;
 }
 
+input,
+#fraction select,
+button {
+	height: 40px;
+	border-width: var(--input-border-width);
+	border-color: var(--input-border-color);
+	border-radius: var(--input-border-radius);
+}
+
+.rules {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.rules label {
+	display: flex;
+	align-items: start;
+	gap: 5px;
+}
+
+.rules label input {
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+button,
+.input select,
+.rules label,
+.rules label input {
+	cursor: pointer;
+}
+
+button {
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.have-already {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+a {
+	text-decoration: none;
+}

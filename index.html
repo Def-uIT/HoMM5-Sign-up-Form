@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Form</title>
     <link rel="stylesheet" href="./css/style.css">
-
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -26,8 +26,8 @@
                     <input type="password" name="password" id="password" placeholder="Пароль (8 или более символов)" required>
                 </div>
                 <div class="input">
-                    <label for="password">Подтвердить пароль</label>
-                    <input type="password" name="password" id="password" placeholder="Напиши тот же пароль" required>
+                    <label for="confirmPassword">Подтвердить пароль</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Напиши тот же пароль" required>
                 </div>
                 <div class="input" id="fraction">
                     <label for="fraction">Фракция</label>
@@ -46,7 +46,7 @@
                     <label for="checkbox"><input type="checkbox" id="checkbox" required><span>Да, я понимаю и подписываю <a href="#">священный договор</a> в мире асхана</span></label>
                 </div>
                 <div class="submit">
-                    <button type="submit">На заливку</button>
+                    <button type="submit" id="submit">На заливку</button>
                 </div>
                 <div class="have-already">
                     Уже был у нас? <a href="./rules.html">Заходи</a>

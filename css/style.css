@@ -78,11 +78,11 @@ table {
 	background-position: top;
 	background-size:cover;
 	background-repeat: no-repeat;
-	width: 70vw;
+	width: 65vw;
 }
 
 .form {
-	width: 30vw;
+	width: 35vw;
 	background-image: url('../img/Рисунок1.jpg');
 	display: flex;
 	flex-flow: column nowrap;
@@ -110,8 +110,7 @@ h2,
 .rules,
 #submit,
 .have-already {
-	min-width: none;
-	width: max(205px, 50%);
+	width: max(233px, 50%);
 }
 
 
@@ -124,6 +123,11 @@ h2 {
 .input {
 	display: flex;
 	flex-flow: column wrap;
+}
+
+input,
+select {
+	padding: 2px 16px 0px;
 }
 
 input,
@@ -173,4 +177,21 @@ button {
 
 a {
 	text-decoration: none;
+}
+
+@media (max-width: 700px) {
+	.main {
+		flex-flow: column;
+	}
+
+	.background {
+		width: 100vw;
+		height: 20vh;
+	}
+
+	.form {
+		width: 100vw;
+        height: 80vh;
+	}
+
 }

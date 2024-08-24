@@ -226,17 +226,22 @@ a {
 	.main {
 		flex-flow: column;
 		height: auto;
+		
 	}
 
 	.background {
 		width: 100vw;
 		height: 20vh;
+		background-size: 100vw;
 	}
 
 	.form {
-		width: 100vw;
+		width: auto;
 		height: auto;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		flex-flow: row wrap;
 	}
+
+	
 }

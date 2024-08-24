@@ -14,9 +14,6 @@ checkbox.checked = 'checked'
 
 button.addEventListener('click', () => {
 
-    if (password != confirmPassword) {
-        input.reportValidity();
-    }
 }
 
 )

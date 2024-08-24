@@ -64,6 +64,7 @@ table {
   
   body {
 	font-family: main-font, sans-serif;
+
   }
   
 
@@ -96,6 +97,8 @@ table {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 form > div {
@@ -117,11 +120,9 @@ h2,
 .input,
 #fraction,
 .rules,
-#submit,
 .have-already {
-	width: max(233px, 50%);
+	width: max(213px, 50%);
 }
-
 
 h2 {
 	display: flex;
@@ -137,7 +138,7 @@ h2 {
 
 input,
 select {
-	padding: 2px 16px 0px;
+	padding: 2px 0px 0px 16px;
 }
 
 input,
@@ -176,6 +177,10 @@ input {
 	width: auto;
 	margin: 0;
 	padding: 0;
+}
+
+.submit {
+	width: 213px;
 }
 
 button,
@@ -217,19 +222,22 @@ a {
 	text-decoration: none;
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
 	.main {
 		flex-flow: column;
 	}
 
 	.background {
 		width: 100vw;
-		height: 20vh;
+		height: max(100%, 20vh);
 	}
 
 	.form {
 		width: 100vw;
-        height: 80vh;
+        height: max(100%, 80vh);
+		padding-top: 10px;
+		padding-bottom: 10px;
+
 	}
 
 }

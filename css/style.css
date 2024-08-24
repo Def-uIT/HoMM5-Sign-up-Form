@@ -73,6 +73,7 @@ table {
 	--input-border-width: 2px;
 	--input-border-color: e9e9e9;
 	--input-border-radius: 8px;
+	--padding-edge: 24px 0px;
 	box-sizing: border-box;
 }
 
@@ -97,8 +98,6 @@ table {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 form > div {
@@ -114,6 +113,7 @@ form {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	padding: var(--padding-edge);
 }
 
 h2,
@@ -238,8 +238,6 @@ a {
 	.form {
 		width: auto;
 		height: auto;
-		padding-top: 10px;
-		padding-bottom: 10px;
 		flex-flow: row wrap;
 	}
 

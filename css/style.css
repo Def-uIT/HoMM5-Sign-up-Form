@@ -70,10 +70,8 @@ table {
 
 
 :root {
-	--input-border-width: 2px;
-	--input-border-color: e9e9e9;
 	--input-border-radius: 8px;
-	--padding-edge: 54px 0px;
+	--padding-edge: 120px 0px;
 	box-sizing: border-box;
 }
 
@@ -145,8 +143,6 @@ input,
 #fraction select,
 button {
 	height: 40px;
-	border-width: var(--input-border-width);
-	border-color: var(--input-border-color);
 	border-radius: var(--input-border-radius);
 }
 
@@ -192,6 +188,15 @@ button,
 
 select {
 	background: none;
+	outline: none;
+	border: 4px solid rgb(175, 107, 43);
+}
+
+select:hover,
+input:hover {
+	background-color: rgb(175, 107, 43);
+	transition: 0.5s;
+	border-radius: 4px;
 }
 
 button {
@@ -205,11 +210,12 @@ button {
 
 button:hover {
 	background-color: rgb(189, 121, 57);
-	transition: 0.5s;
+	transition: 0.1s;
 }
 
 button:active {
 	cursor: default;
+	background-color:rgb(175, 107, 43);
 }
 
 .have-already {
@@ -219,7 +225,40 @@ button:active {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
+	color: rgb(175, 107, 43);
+}
+
+a:hover {
+	color: rgb(189, 121, 57);
+	transition: 0.1s;
+}
+
+a:visited {
+	color: rgb(175, 107, 43);
+}
+
+ol {
+	text-align: center;
+}
+
+li {
+	padding: 20px;
+}
+
+#comeback {
+	width: 120px;
+}
+
+#comeback a {
+	color: rgb(255, 255, 255);
+}
+
+.button-comeback {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media only screen and (max-width: 700px) {

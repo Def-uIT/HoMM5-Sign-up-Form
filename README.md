@@ -1,4 +1,4 @@
-# HoMM5-Sign-up-Form
+# RegisterForm
 The template for my register/login forms
 
-Live Preview: https://def-uit.github.io/HoMM5-Sign-up-Form/
+Live Preview: https://def-uit.github.io/RegisterForm/
